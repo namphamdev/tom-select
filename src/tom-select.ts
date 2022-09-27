@@ -819,6 +819,9 @@ export default class TomSelect extends MicroPlugin(MicroEvent){
 		}
 
 		self.refreshState();
+		if (selft.getValue()) {
+			selft.setTextboxValue(selft.getValue())	
+		}
 	}
 
 	/**
